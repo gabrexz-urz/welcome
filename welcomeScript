@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome Message</title>
+</head>
+<body>
+  <div id="welcome" style="font-size: 24px; font-family: Arial, sans-serif;"></div>
+
+  <script>
+    var userName = prompt("Enter your name:");
+    if(userName) {
+      document.getElementById("welcome").innerText = "Welcome, " + userName + "!";
+    } else {
+      document.getElementById("welcome").innerText = "Welcome, guest!";
+    }
+  </script>
+</body>
+</html>
